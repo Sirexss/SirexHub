@@ -1,0 +1,43 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Script hub by Sirex", IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- functions
+
+function clickspeed()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sirexss/1speedeveryclick/refs/heads/main/ScriptMain", true))()
+end
+
+function infyield()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source", true))()
+end
+
+-- tabs
+
+local SirexTab = Window:MakeTab({
+	Name = "By Sirex",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local OtherTab = Window:MakeTab({
+	Name = "Other Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- buttons
+
+SirexTab:AddButton({
+	Name = "Every click + 1 speed autofarm",
+	Callback = function()
+      		clickspeed()
+  	end    
+})
+
+OtherTab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		infyield()
+  	end    
+})
