@@ -8,6 +8,10 @@ function clickspeed()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sirexss/1speedeveryclick/refs/heads/main/ScriptMain", true))()
 end
 
+function clickerinc()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Sirexss/MoneyClickerInc/refs/heads/main/ScriptMain')))()
+end
+
 function infyield()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source", true))()
 end
@@ -32,6 +36,13 @@ SirexTab:AddButton({
 	Name = "Every click + 1 speed autofarm",
 	Callback = function()
       		clickspeed()
+  	end    
+})
+
+SirexTab:AddButton({
+	Name = "Money Clicker Inc. autofarm",
+	Callback = function()
+      		clickerinc()
   	end    
 })
 
